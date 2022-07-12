@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700&display=swap");
+
+:root {
+  --Dark-Blue: hsl(217, 28%, 15%); /*(intro and email sign up background): */
+  --DarkBlue: hsl(218, 28%, 13%); /* (main background) */
+  --Darkblue: hsl(216, 53%, 9%); /*(footer background)*/
+  --Dark-Blue: hsl(219, 30%, 18%); /*(testimonials background)*/
+  --Cyan: hsl(176, 68%, 64%); /*(inside call-to-action gradient)*/
+  --Blue: hsl(198, 60%, 50%); /*(inside call-to-action gradient)*/
+  --Light-Red: hsl(0, 100%, 63%); /*(error)*/
+  --White: hsl(0, 0%, 100%);
+}
+::selection {
+  background-color: var(--White);
+  color: var(--Cyan);
+}
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Raleway", "sans-serif";
+  font-family: "Open Sans", "sans-serif";
+  background-color: var(--DarkBlue);
+  color: var(--White);
+}
+#error {
+    color: var(--Light-Red);
+}
+/* Utiliy Class */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+a {
+  font-family: "Raleway", "sans-serif";
+}
+.container {
+  max-width: 1300px;
+  padding: 0 3rem;
+  margin: 0 auto;
+}
+.ul,
+li {
+  list-style: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+p {
+  font-size: 14px;
+  font-family: "Open Sans", "sans-serif";
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Menu */
+.nav {
+  width: 100%;
+  height: 10vh;
+}
+.nav img {
+  width: 100px;
+}
+.links li {
+  display: inline-block;
+  color: var(--White);
+  margin-left: 20px;
+}
+.links a {
+  color: var(--White);
+  font-size: 14px;
+}
+.links a:hover {
+  font-weight: 500;
+  border-bottom: 2px solid var(--White);
+}
+
+/* Hero section */
+header {
+  text-align: center;
+  background: url(/fylo-dark-theme-landing-page-master/images/bg-curvy-mobile.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+.hero img {
+  width: 100%;
+  margin: 50px auto;
+}
+.hero h1 {
+  font-size: 1.9em;
+  line-height: 1.5em;
+  padding-bottom: 20px;
+}
+.hero p {
+  line-height: 1.5em;
+  padding-bottom: 40px;
+  font-size: 15px;
+}
+.cta {
+  background-color: var(--Blue);
+  color: var(--White);
+  padding: 15px 45px;
+  border-radius: 30px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.cta:hover {
+  background-color: var(--Cyan);
+  transition: background-color 1s ease-in;
+}
+
+/* features section */
+.features {
+  margin-top: 150px;
+  text-align: center;
+}
+.sect {
+  margin-top: 100px;
+}
+.sect h3 {
+  margin-top: 20px;
+}
+.sect p {
+  margin-top: 10px;
+  line-height: 1.6em;
+}
+
+/* How it works section */
+.how-it-works {
+  margin: 200px auto;
+}
+.how-it-works img {
+  width: 100%;
+}
+.how-it-works h2 {
+  font-size: 1.5em;
+  padding: 25px 0;
+}
+.how-it-works p {
+  line-height: 1.5em;
+  padding-bottom: 20px;
+}
+.how-it-works a {
+  color: var(--Cyan);
+  padding: 2px;
+  border-bottom: 2px solid var(--Cyan);
+}
+.how-it-works a:hover {
+  color: var(--White);
+  border-bottom: 2px solid var(--White);
+}
+
+/* Testimonials Section */
+.qut {
+  width: 40px;
+  margin-bottom: -65px;
+}
+.testimonial {
+  margin-top: 50px;
+  background-color: var(--Dark-Blue);
+  padding: 20px;
+  border-radius: 10px;
+}
+.user {
+  width: 40px;
+  border-radius: 50px;
+  display: block;
+  margin-right: 10px;
+}
+.info {
+  display: flex;
+  padding-top: 20px;
+  align-items: center;
+}
+.testimonial p {
+  line-height: 2em;
+}
+.contact h5 {
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+}
+.contact p {
+  font-size: 0.8em;
+}
+
+/* prefooter area */
+.pre-footer {
+  margin-top: 200px;
+  z-index: 10000;
+}
+.mail {
+  background-color: var(--Dark-Blue);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 8px 20px hsl(217, 27%, 15%);
+  z-index: 100;
+  margin-bottom: -100px;
+  position: relative;
+}
+.mail h3 {
+  padding-bottom: 20px;
+  font-size: 1.5em;
+}
+.mail p {
+  line-height: 1.5em;
+  margin-bottom: 20px;
+}
+input {
+  display: block;
+  width: 100%;
+  padding: 20px 40px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  margin: 20px 0;
+}
+input[type="submit"] {
+  background-color: var(--Blue);
+  color: var(--White);
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: var(--Cyan);
+}
+
+/* Footer Section */
+footer {
+  background-color: var(--Darkblue);
+  z-index: 0;
+}
+.footer {
+  padding-top: 200px;
+  z-index: 0;
+}
+.footer.flex {
+  display: block;
+}
+.foot {
+  margin-bottom: 40px;
+}
+.foot a {
+  color: var(--White);
+}
+.foot a:hover {
+    font-weight: bold;
+}
+.location {
+  padding-right: 20px;
+}
+.foot p {
+  padding-top: 20px;
+  line-height: 1.5rem;
+}
+.foot2 a {
+  margin-left: 20px;
+}
+.foot2 li {
+  padding-bottom: 10px;
+}
+.foot li {
+  margin-top: 10px;
+  display: flex;
+}
+.social {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Media Qeuries for larger screen sizes */
+
+@media screen and (min-width: 900px) {
+  /* Hero Section */
+  header {
+    background: url(/fylo-dark-theme-landing-page-master/images/bg-curvy-desktop.svg);
+    background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  }
+  .hero {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  /* Features Section */
+  .features .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 400px));
+    gap: 100px 100px;
+    justify-content: center;
+  }
+  .sect {
+    margin: auto;
+  }
+
+  /* How It works section */
+  .how-it-works .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+  }
+  .how-it-works h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+  }
+  .side2 {
+    flex-basis: 50%;
+  }
+
+  /* testimonial section */
+  .testimonials .wrapper {
+    display: flex;
+    gap: 2.7rem;
+  }
+
+  /* Form for email and pre-footer*/
+  .mail {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: -100px;
+  }
+  input {
+    display: inline;
+  }
+  input[type="email"] {
+    width: 50%;
+    margin-right: 20px;
+  }
+  input[type="submit"] {
+    width: 40%;
+    padding: 20px 30px;
+    font-size: 15px;
+  }
+
+  /* Footer Section */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .foot1 {
+    width: 350px;
+  }
+}
