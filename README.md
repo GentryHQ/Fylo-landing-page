@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links 
 
-- Solution URL: [GitHub](https://your-solution-url.com)
+- Solution URL: [GitHub](https://github.com/GentryHQ/Fylo-landing-page)
 - Live Site URL: [Gentry Portfolio](https://gentry.com.ng/portfolio)
 
 ## My Process 
